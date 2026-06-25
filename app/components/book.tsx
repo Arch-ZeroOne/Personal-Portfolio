@@ -7,13 +7,13 @@ const space_grotesk = Space_Grotesk({
 const Book = () => {
   return (
     <div className={space_grotesk.className}>
-      <section className="flex items-center  gap-6 w-[50%] mr-auto ml-auto mt-15">
+      <section className="flex items-center  gap-6 w-[80%] mr-auto ml-auto mt-15">
         <div className="flex flex-col items-center">
           <div className="text-center lg:text-left justify-center items-center">
-            <h1 className="text-3xl font-bold text-center">
+            <h1 className="text-sm sm:text-2xl font-bold text-center">
               Got A Project in Mind?
             </h1>
-            <p className="py-6 text-center">
+            <p className="py-6 text-center text-sm sm:text-lg">
               Book a consultation for your web development project. Complete
               this form with your project details, goals, and requirements, and
               we'll get in touch to discuss the best solution for your website.

@@ -27,7 +27,7 @@ const project_info = [
 ];
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-6 w-[50%] mr-auto ml-auto mt-15">
+    <section className="flex flex-col gap-6 w-[80%] mr-auto ml-auto mt-15">
       <h2>Projects</h2>
       <div className="flex flex-col gap-9">
         {project_info.map((data) => (
@@ -39,11 +39,13 @@ const Projects = () => {
               <img src={data.image} alt="Album" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">{data.name}</h2>
-              <p>{data.description}</p>
-              <div className="card-actions justify-end flex w-full">
+              <h2 className="card-title text-xs sm:text-lg">{data.name}</h2>
+              <p className="text-xs sm:text-sm md:text-lg">
+                {data.description}
+              </p>
+              <div className="card-actions  flex w-full justify-center md:justify-end">
                 <button
-                  className="btn bg-black text-white border-black"
+                  className="btn bg-black text-white border-black text-xs rounded-2xl"
                   onClick={() => (window.location.href = `${data.code_repo}`)}
                 >
                   <svg
@@ -63,7 +65,7 @@ const Projects = () => {
 
                 {data.live && (
                   <button
-                    className="btn bg-white text-black border-[#e5e5e5]"
+                    className="btn bg-white text-black border-[#e5e5e5]  text-xs rounded-2xl"
                     onClick={() => (window.location.href = `${data.live}`)}
                   >
                     <svg

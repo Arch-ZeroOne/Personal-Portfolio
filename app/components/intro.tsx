@@ -9,10 +9,12 @@ const space_grotesk = Space_Grotesk({
 
 const Intro = () => {
   return (
-    <section className="flex flex-col gap-4 w-[50%] mr-auto ml-auto mt-15">
-      <h1 className="font-bold text-2xl">Windyl Monton</h1>
+    <section className="flex flex-col gap-4 w-[80%]  mr-auto ml-auto mt-15">
+      <h1 className="font-bold text:xs sm:text-sm  md:text-left md:text-2xl ">
+        Windyl Monton
+      </h1>
       <section className={space_grotesk.className}>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 xs: text-sm  md:text-left md:text-lg">
           <div>
             Hello! My name is{" "}
             <span className=" text-violet-600">Windyl Monton </span>, and I am
