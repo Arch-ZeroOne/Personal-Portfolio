@@ -7,7 +7,7 @@ const space_grotesk = Space_Grotesk({
 const Book = () => {
   return (
     <div className={space_grotesk.className}>
-      <section className="flex items-center  gap-6 w-[80%] mr-auto ml-auto mt-15">
+      <section className="flex items-center  gap-6 w-[70%] mr-auto ml-auto mt-15">
         <div className="flex flex-col items-center">
           <div className="text-center lg:text-left justify-center items-center">
             <h1 className="text-sm sm:text-2xl font-bold text-center">

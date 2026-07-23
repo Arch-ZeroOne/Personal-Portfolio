@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Intro from "./components/intro";
 import Technologies from "./components/technologies";
 import GithubStreak from "./components/githubstreak";

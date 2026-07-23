@@ -27,9 +27,9 @@ const project_info = [
 ];
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-6 w-[80%] mr-auto ml-auto mt-15">
+    <section className="flex flex-col gap-6 w-[70%] mr-auto ml-auto mt-15">
       <h2>Projects</h2>
-      <div className="flex flex-col gap-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-9 justify-center items-center">
         {project_info.map((data) => (
           <div
             className="card lg:card-side bg-base-100 shadow-sm flex flex-col"
@@ -40,9 +40,7 @@ const Projects = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-xs sm:text-lg">{data.name}</h2>
-              <p className="text-xs sm:text-sm md:text-lg">
-                {data.description}
-              </p>
+              <p className="text-xs sm:text-sm ">{data.description}</p>
               <div className="card-actions  flex w-full justify-center md:justify-end">
                 <button
                   className="btn bg-black text-white border-black text-xs rounded-2xl"

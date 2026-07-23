@@ -9,7 +9,7 @@ const space_grotesk = Space_Grotesk({
 
 const Intro = () => {
   return (
-    <section className="flex flex-col gap-4 w-[80%]  mr-auto ml-auto mt-15">
+    <section className="flex flex-col gap-4 w-[70%]  mr-auto ml-auto mt-15">
       <h1 className="font-bold text:xs sm:text-sm  md:text-left md:text-2xl ">
         Windyl Monton
       </h1>
