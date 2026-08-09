@@ -10,6 +10,12 @@ const poppins = Poppins({
 const Intro = () => {
   return (
     <section className="flex flex-col gap-4 w-[70%]  mr-auto ml-auto mt-15">
+      <div className="avatar">
+        <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+          <img src={"../icon/me.png"}></img>
+        </div>
+      </div>
+
       <h1
         className={` font-bold text:xs sm:text-sm  md:text-left md:text-lg ${poppins.className}`}
       >
