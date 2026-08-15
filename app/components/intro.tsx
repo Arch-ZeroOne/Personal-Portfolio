@@ -52,7 +52,7 @@ const Intro = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center  w-full">
+      <section className="flex-col justify-center items-center  w-full md:flex-row">
         <div className="flex items-center gap-4 w-full">
           <button className="btn btn-outline btn-primary rounded-xl">
             <svg
@@ -109,7 +109,7 @@ const Intro = () => {
             Book Appointment
           </button>
         </div>
-        <div className="flex items-center gap-5   w-full justify-end">
+        <div className="flex items-center gap-5   w-full mt-8 md:mt-0 md:justify-end">
           <Links />
           <ThemeToggle />
         </div>

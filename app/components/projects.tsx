@@ -1,64 +1,52 @@
 "use client";
-import { useState } from "react";
-import Technologies from "./technologies";
+
 const project_info = [
   {
     image: "./projects/aquaplant.png",
     name: "Aqua Plant",
-    description:
-      "A smart IoT-based water monitoring system designed to track water quality and environmental conditions in real time. The application collects sensor data, processes readings through a Node.js backend, and provides users with actionable insights through an intuitive dashboard. Built to support efficient monitoring and early detection of water-related issues.",
+
     code_repo: "https://github.com/Arch-ZeroOne/AquaPlant",
-    technologies: ["HTML5", "CSS", "Node.js", "C++", "Firebase"],
+    icon: "./icon/plant.png",
   },
   {
     image: "./projects/moviesearch.png",
     name: "Movie Search",
-    description:
-      "A responsive movie discovery platform that allows users to search for films, explore trending titles, and view detailed information such as ratings, release dates, genres, and summaries. The application integrates with a third-party movie API to deliver up-to-date content while providing a clean and user-friendly browsing experience.",
+
     code_repo: "https://github.com/Arch-ZeroOne/Movie-Search",
     live: "https://movie-search-three-xi.vercel.app/",
-    technologies: ["React", "TMDB Api", "Axios", "C++"],
+    icon: "./icon/movie.png",
   },
   {
     image: "./projects/stride.png",
     name: "Stride POS",
-    description:
-      "A modern Point-of-Sale (POS) system built to simplify sales management, inventory tracking, and transaction processing for small businesses. The platform enables users to manage products, monitor stock levels, record sales activity, and generate operational insights through an organized and efficient interface.",
+
     code_repo: "https://github.com/Arch-ZeroOne/Stride",
     live: "https://stride-sooty.vercel.app/",
-    technologies: ["React", "Postgresql", "Node.js", "Express.js"],
+    icon: "./icon/cashier.png",
   },
 ];
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-15 w-[70%] mr-auto ml-auto mt-15 mb-10">
+    <section className="flex flex-col gap-15 w-[70%] mr-auto ml-auto mt-15 mb-10 items-ce">
       <h2>Projects</h2>
-      {project_info.map((data, index) => (
-        <section className={`flex flex-col gap-4 w-[90%] mr-auto ml-auto`}>
+      <section className="grid grid-cols-1 justify-items-center justify-center gap-4  md:grid-cols-3 lg:grid-cols-4">
+        {project_info.map((data, index) => (
           <div
-            className={`card lg:card-side bg-base-100 shadow-sm border-none  ${index % 2 === 0 ? "flex-row-reverse" : "flex-row"}`}
+            className="card bg-base-100 w-full shadow-sm border-x-black cursor-pointer hover:bg-black hover:text-white"
+            onClick={() => window.open(data.live ? data.live : data.code_repo)}
           >
-            <div className="card-body ">
-              <h2 className="card-title">{data.name}</h2>
-              <p>{data.description}</p>
-              <section className="flex flex-col gap-4">
-                <h4>Technologies Used</h4>
-                <div className="flex gap-3">
-                  {data.technologies &&
-                    data.technologies.map((technology) => (
-                      <div className="badge badge-soft badge-primary">
-                        {technology}
-                      </div>
-                    ))}
-                </div>
-              </section>
+            <div className="card-body">
+              <div className="flex items-center gap-2 ">
+                <img className="h-10 w-10" src={data.icon}></img>
+                <h2 className="card-title">{data.name}</h2>
+              </div>
+              <p className="text-[10px]">
+                {data.live ? data.live : data.code_repo}
+              </p>
             </div>
-            <figure className="rounded-lg border-gray-500">
-              <img src={data.image} alt="Album" />
-            </figure>
           </div>
-        </section>
-      ))}
+        ))}
+      </section>
     </section>
   );
 };
