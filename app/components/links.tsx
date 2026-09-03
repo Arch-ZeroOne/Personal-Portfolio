@@ -1,5 +1,3 @@
-import React from "react";
-
 const Links = () => {
   return (
     <section className="flex items-center gap-3">

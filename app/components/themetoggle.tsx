@@ -1,7 +1,7 @@
 const ThemeToggle = () => {
   return (
     <label className="toggle text-base-content ">
-      <input type="checkbox" value="dracula" className="theme-controller" />
+      <input type="checkbox" value="dark" className="theme-controller" />
 
       <svg
         aria-label="sun"
