@@ -27,9 +27,8 @@ const project_info = [
 ];
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-15 w-[70%] mr-auto ml-auto mt-15 mb-10 items-ce">
-      <h2>Projects</h2>
-      <section className="grid grid-cols-1 justify-items-center justify-center gap-4  md:grid-cols-3 lg:grid-cols-4"></section>
+    <section className="flex flex-col gap-15 w-[80%] mr-auto ml-auto mt-15 mb-10 items-ce">
+      <h2 className="text-4xl">Projects</h2>
     </section>
   );
 };

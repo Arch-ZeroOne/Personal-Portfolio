@@ -1,3 +1,3 @@
 ## INSPO
 
-https://hudovich.com/
+https://portfolio-eta-lovat-79.vercel.app/

@@ -1,19 +1,21 @@
 import React from "react";
 
+import { JetBrains_Mono } from "next/font/google";
+
+const dopio_one = JetBrains_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 const Technologies = () => {
   return (
-    <section className="flex flex-col gap-5 w-[70%] mr-auto ml-auto mt-15">
-      <h2 className=" text-center sm:text-left">Technologies</h2>
-      <div className="grid grid-cols-3 gap-4 md:grid-cols-10 items-center w-full self-start justify-center place-items-center">
-        <img className="h-10" src="./icon/java.svg"></img>
-        <img className="h-10" src="./icon/react.svg"></img>
-        <img className="h-10" src="./icon/nextjs.svg"></img>
-        <img className="h-10" src="./icon/nodejs.svg"></img>
-        <img className="h-10" src="./icon/prisma.svg"></img>
-        <img className="h-10" src="./icon/supabase.png"></img>
-        <img className="h-10" src="./icon/postgres.png"></img>
-        <img className="h-10" src="./icon/git.png"></img>
-        <img className="h-10" src="./icon/github.png"></img>
+    <section
+      className={`flex flex-col items-center gap-5  mr-auto ml-auto mt-15 `}
+    >
+      <h3 className="text-4xl self-start">Skills</h3>
+      <div>
+        <p className="text-2xl">Here are the tools I like to work with</p>
+        <section></section>
       </div>
     </section>
   );
