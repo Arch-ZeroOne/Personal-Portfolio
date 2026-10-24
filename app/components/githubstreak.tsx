@@ -2,12 +2,18 @@ import React from "react";
 import { GitHubCalendar } from "react-github-calendar";
 const GithubStreak = () => {
   return (
-    <section className="flex flex-col gap-6 w-[90%] md:w-[70%]  mt-15 justify-center mr-auto ml-auto">
-      <h3 className="self-start">My Github Contributions</h3>
-      <div className="w-full">
-        <GitHubCalendar username="Arch-ZeroOne" fontSize={20} blockSize={25} />
+    <div className="card w-200 bg-base-200  shadow-sm rounded-xl">
+      <div className="card-body">
+        <h2 className="card-title">Github Contributions</h2>
+        <div className="w-full">
+          <GitHubCalendar
+            username="Arch-ZeroOne"
+            fontSize={13}
+            blockSize={13}
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

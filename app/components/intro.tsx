@@ -9,53 +9,20 @@ const poppins = Poppins({
 
 const Intro = () => {
   return (
-    <section className="flex flex-col gap-5 w-[70%]  mr-auto ml-auto mt-15">
-      <div className="avatar">
-        <div className="ring-primary ring-offset-base-100 w-50 rounded-full ring-2 ring-offset-2 mr-auto ml-auto md:mr-0 md:ml-0">
-          <img src={"../icon/me.png"}></img>
-        </div>
-      </div>
-
-      <h1
-        className={`text-center font-bold text:xs sm:text-sm  md:text-left md:text-2xl ${poppins.className}`}
-      >
-        Hey I am{" "}
-        <span className="underline underline-offset-8 decoration-violet-400 font-bold">
-          Windyl Monton!
-        </span>
-      </h1>
-      <section className={poppins.className}>
-        <div className="flex flex-col gap-5 xs: text-sm  md:text-left md:text-2xl/12">
-          <div>
-            Hello! My name is{" "}
-            <span className=" text-violet-600">Windyl Monton </span>, and I am
-            currently a third-year{" "}
-            <span className=" text-violet-600">
-              Bachelor of Science in Information Technology (BSIT){" "}
-            </span>
-            student with a strong interest in web development. As an aspiring
-            web developer, I am passionate about creating functional,
-            responsive, and user-friendly web applications that provide
-            meaningful experiences to users. I continuously seek opportunities
-            to expand my knowledge and improve my technical skills through
-            academic projects, self-learning, and hands-on practice.
-          </div>
-          <div>
-            I am eager to grow both personally and professionally in the field
-            of technology by exploring modern web development tools and best
-            practices. With determination, adaptability, and a willingness to
-            learn, I aim to become a competent web developer capable of
-            contributing innovative solutions to real-world challenges. I
-            believe that every project and learning experience brings me one
-            step closer to achieving my goals in the ever-evolving world of
-            information technology.
+    <section className="flex flex-col gap-5 ">
+      <div className="flex items-center gap-5 w-lg ">
+        <div className="card bg-base-200  shadow-sm rounded-xl ">
+          <figure className="px-10 pt-10">
+            <img src="/images/me.png" alt="Shoes" className="rounded-xl" />
+          </figure>
+          <div className="card-body items-center text-center w-full">
+            <h2 className="card-title">Windyl Monton</h2>
+            <p>Fullstack Web Developer/Flutter Developer</p>
+            <div className="card-actions w-full">
+              <Links />
+            </div>
           </div>
         </div>
-      </section>
-
-      <div className="flex items-center gap-5   w-full justify-start">
-        <Links />
-        <ThemeToggle />
       </div>
     </section>
   );
