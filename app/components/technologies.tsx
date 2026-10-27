@@ -2,20 +2,53 @@ import React from "react";
 
 const Technologies = () => {
   return (
-    <section className="flex flex-col gap-5 w-[70%] mr-auto ml-auto mt-15">
-      <h2 className=" text-center sm:text-left">Technologies</h2>
-      <div className="grid grid-cols-3 gap-4 md:grid-cols-10 items-center w-full self-start justify-center place-items-center">
-        <img className="h-10" src="./icon/java.svg"></img>
-        <img className="h-10" src="./icon/react.svg"></img>
-        <img className="h-10" src="./icon/nextjs.svg"></img>
-        <img className="h-10" src="./icon/nodejs.svg"></img>
-        <img className="h-10" src="./icon/prisma.svg"></img>
-        <img className="h-10" src="./icon/supabase.png"></img>
-        <img className="h-10" src="./icon/postgres.png"></img>
-        <img className="h-10" src="./icon/git.png"></img>
-        <img className="h-10" src="./icon/github.png"></img>
+    <div className="card  bg-base-200  shadow-sm rounded-xl min-w-0">
+      <div className="card-body">
+        <h2 className="card-title text-sm ">
+          <section className="flex items-center gap-4 justify-center">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+              className="h-10 w-10"
+            />
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+              className="h-10 w-10"
+            />
+          </section>
+        </h2>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import { GitHubCalendar } from "react-github-calendar";
 const GithubStreak = () => {
   return (
-    <div className="card w-200 bg-base-200  shadow-sm rounded-xl">
+    <div className="card shadow-sm rounded-xl min-w-0">
       <div className="card-body">
         <h2 className="card-title">Github Contributions</h2>
         <div className="w-full">

@@ -1,6 +1,6 @@
 const Summary = () => {
   return (
-    <div className="card w-200 bg-base-200  shadow-sm rounded-xl">
+    <div className="card in-w-0 bg-base-200  shadow-sm rounded-xl">
       <div className="card-body">
         <h2 className="card-title">Summary</h2>
         <div className="w-full">

@@ -1,5 +1,4 @@
 "use client";
-import Badge from "./badge";
 const project_info = [
   {
     image: "./projects/aquaplant.png",
