@@ -2,45 +2,79 @@ import React from "react";
 import Links from "./links";
 import { MoveUpRight } from "lucide-react";
 import ThemeToggle from "./themetoggle";
-import { Poppins } from "next/font/google";
+
 import Location from "./location";
-import { Anaheim } from "next/font/google";
+import { Anaheim, Offside, Roboto } from "next/font/google";
+
 const anaheim = Anaheim({
   weight: "400",
   subsets: ["latin"],
 });
-
+const offSide = Offside({
+  weight: "400",
+  subsets: ["latin"],
+});
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+});
 const Intro = () => {
   return (
-    <section className="flex  gap-5 w-4xl mt-30 items-center ">
+    <section className="flex  gap-5 w-4xl mt-20 items-center ">
       <div className="flex w-full items-center">
         <div className="flex flex-col w-full h-40 gap-5 items-center">
           <div className="flex items-center gap-8 w-full">
             <img
               src="/images/me.png"
               alt="Shoes"
-              className="rounded-md h-40 w-40"
+              className="rounded-sm h-40 w-40"
             />
-            <div className="flex flex-col  w-full  gap-2">
+            <div className="flex flex-col  w-full  gap-3">
               <h2 className={`text-4xl font-bold ${anaheim.className}`}>
                 Windyl Monton
               </h2>
-              <p className={`font-bold text-gray-500`}>
+              <p
+                className={` text-gray-400 text-sm font-bold ${offSide.className}`}
+              >
                 Fullstack Web Developer/Flutter Developer
               </p>
               <Location />
             </div>
             <ThemeToggle />
           </div>
-          <div className="flex items-center gap-4 w-full">
-            <button className="btn btn-neutral rounded-xl text-xs">
+          <div className="flex items-center gap-9 w-full">
+            <button
+              className={`btn btn-neutral font-bold rounded-xl text-xs h-8  ${roboto.className}`}
+            >
               RESUME
               <MoveUpRight height={15} width={15} />
             </button>
-            <div className="flex gap-4 items-center self-start w-full">
+            <div className="flex items-center gap-5">
+              <svg
+                className="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M11.7444 14C5.13962 13 5.64768 8.5 7.67987 7C7.27882 6.39155 6.66375 4 7.1718 3.00001C8.18792 3.5 9.55173 4.23944 10.2202 5C12.2524 4 15.3007 4 16.8249 5C17.226 4.18873 18.6968 3.42254 19.3652 3C19.9668 3.60845 19.5323 5.98592 19.3652 7C20.3678 9.19718 20.8894 12.5 15.3007 14C16.1273 14.6688 17.4571 16.2652 18.3819 18.0893C19.0373 19.3821 17.7844 20.5701 16.3571 20.3176C15.3606 20.1413 14.2545 20 13.2685 20C12.0745 20 10.494 20.2071 9.12617 20.4329C7.71155 20.6663 6.56735 19.4472 7.29296 18.2106C7.81974 17.3128 8.48393 16.4725 9.20408 16C8.95342 15.662 7.9605 14.6887 6.15574 15.5C3.89979 16.5141 2.60607 14.2676 3.10739 13"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
               <svg
                 fill="#000000"
-                className="w-5 h-5"
+                className="w-4 h-4"
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +99,10 @@ const Intro = () => {
                   </g>{" "}
                 </g>
               </svg>
+
               <svg
                 fill="#000000"
-                className="w-6 h-6"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -83,28 +118,6 @@ const Intro = () => {
                     {" "}
                     <path d="M19.435,4.065H4.565a2.5,2.5,0,0,0-2.5,2.5v10.87a2.5,2.5,0,0,0,2.5,2.5h14.87a2.5,2.5,0,0,0,2.5-2.5V6.565A2.5,2.5,0,0,0,19.435,4.065Zm-14.87,1h14.87a1.489,1.489,0,0,1,1.49,1.39c-2.47,1.32-4.95,2.63-7.43,3.95a6.172,6.172,0,0,1-1.06.53,2.083,2.083,0,0,1-1.67-.39c-1.42-.75-2.84-1.51-4.25-2.26-1.14-.6-2.3-1.21-3.44-1.82A1.491,1.491,0,0,1,4.565,5.065Zm16.37,12.37a1.5,1.5,0,0,1-1.5,1.5H4.565a1.5,1.5,0,0,1-1.5-1.5V7.6c2.36,1.24,4.71,2.5,7.07,3.75a5.622,5.622,0,0,0,1.35.6,2.872,2.872,0,0,0,2-.41c1.45-.76,2.89-1.53,4.34-2.29,1.04-.56,2.07-1.1,3.11-1.65Z"></path>{" "}
                   </g>{" "}
-                </g>
-              </svg>
-              <svg
-                className="w-7 h-7"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                stroke="#000000"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M11.7444 14C5.13962 13 5.64768 8.5 7.67987 7C7.27882 6.39155 6.66375 4 7.1718 3.00001C8.18792 3.5 9.55173 4.23944 10.2202 5C12.2524 4 15.3007 4 16.8249 5C17.226 4.18873 18.6968 3.42254 19.3652 3C19.9668 3.60845 19.5323 5.98592 19.3652 7C20.3678 9.19718 20.8894 12.5 15.3007 14C16.1273 14.6688 17.4571 16.2652 18.3819 18.0893C19.0373 19.3821 17.7844 20.5701 16.3571 20.3176C15.3606 20.1413 14.2545 20 13.2685 20C12.0745 20 10.494 20.2071 9.12617 20.4329C7.71155 20.6663 6.56735 19.4472 7.29296 18.2106C7.81974 17.3128 8.48393 16.4725 9.20408 16C8.95342 15.662 7.9605 14.6887 6.15574 15.5C3.89979 16.5141 2.60607 14.2676 3.10739 13"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
                 </g>
               </svg>
             </div>
