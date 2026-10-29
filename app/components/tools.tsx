@@ -1,77 +1,92 @@
 import React from "react";
+import { Anaheim, Offside, Roboto } from "next/font/google";
+import { GitHubCalendar } from "react-github-calendar";
+const anaheim = Anaheim({
+  weight: "400",
+  subsets: ["latin"],
+});
+const offSide = Offside({
+  weight: "400",
+  subsets: ["latin"],
+});
 
-const Tools = () => {
+const techStack = [
+  {
+    category: "FRONTEND",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Shadcn UI",
+    ],
+  },
+  {
+    category: "MOBILE",
+    items: ["Flutter", "Dart", "Firebase"],
+  },
+  {
+    category: "BACKEND",
+    items: ["Node.js", "Express", "Laravel", "REST API"],
+  },
+  {
+    category: "DATABASE",
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Prisma",
+      "Supabase",
+      "Firestore",
+    ],
+  },
+  {
+    category: "TOOLS",
+    items: ["Git", "GitHub", "VS Code", "Antigravity", "Postman", "Figma"],
+  },
+  {
+    category: "DEPLOYMENT",
+    items: ["Vercel", "Render", "Firebase Hosting"],
+  },
+];
+
+export default function TechStack() {
   return (
-    <div className="card  bg-base-200  shadow-sm rounded-xl min-w-0">
-      <div className="card-body">
-        <h2 className="card-title">Tools</h2>
+    <div
+      className={`w-[60%] mb-5 shadow-sm rounded-xl min-w-0  mr-auto ml-auto ${anaheim.className}`}
+    >
+      <hr className=" border-base-300 w-full" />
+      <div className="p-6">
+        <section className="w-full flex flex-col ">
+          {techStack.map((group, index) => (
+            <div
+              key={group.category}
+              className={`flex flex-col sm:flex-row items-start gap-3 sm:gap-6 py-4 ${
+                index !== 0 ? "border-t border-base-300" : ""
+              }`}
+            >
+              <div className="w-full sm:w-32 shrink-0 pt-1">
+                <span className="text-xs font-mono text-base-content/60">
+                  {group.category}
+                </span>
+              </div>
 
-        <section className="w-full flex flex-col gap-2">
-          <div className="border border-gray-400 rounded-xl p-4 flex items-start gap-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-              alt="Visual Studio Code"
-              className="h-12 w-12"
-            />
-            <div>
-              <h3 className="font-semibold text-lg">Visual Studio Code</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                A lightweight code editor used for writing, debugging, and
-                managing web and mobile application projects.
-              </p>
+              <div className="flex flex-1 flex-wrap items-center gap-2 min-w-0">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="badge badge-outline badge-sm rounded-full px-3 py-3 font-mono whitespace-nowrap"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="border border-gray-400 rounded-xl p-4 flex items-start gap-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netbeans/netbeans-original.svg"
-              alt="Apache NetBeans"
-              className="h-12 w-12"
-            />
-            <div>
-              <h3 className="font-semibold text-lg">Apache NetBeans</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                An integrated development environment (IDE) used for writing,
-                testing, and debugging applications, especially Java projects.
-              </p>
-            </div>
-          </div>
-
-          <div className="border border-gray-400 rounded-xl p-4 flex items-start gap-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-              alt="Postman"
-              className="h-12 w-12"
-            />
-            <div>
-              <h3 className="font-semibold text-lg">Postman</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                An API development and testing tool used to send HTTP requests,
-                inspect responses, and verify communication between applications
-                and backend services.
-              </p>
-            </div>
-          </div>
-
-          <div className="border border-gray-400 rounded-xl p-4 flex items-start gap-4">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antigravity/antigravity-original.svg"
-              alt="Antigravity"
-              className="h-12 w-12"
-            />
-            <div>
-              <h3 className="font-semibold text-lg">Antigravity</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                An AI-powered development environment used to assist with
-                coding, explore codebases, generate implementations, and
-                automate development tasks with AI agents.
-              </p>
-            </div>
-          </div>
+          ))}
         </section>
       </div>
     </div>
   );
-};
-
-export default Tools;
+}

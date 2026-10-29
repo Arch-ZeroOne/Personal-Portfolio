@@ -12,9 +12,9 @@ const offSide = Offside({
 const GithubStreak = () => {
   return (
     <section
-      className={`w-[65%] mr-auto ml-auto mx-auto px-6 py-16 md:py-24  ${offSide.className} flex flex-col gap-4 items-center`}
+      className={`w-[60%] mr-auto ml-auto mx-auto px-6  ${offSide.className} flex flex-col gap-4 items-center`}
     >
-      <hr className="text-gray-700 font-light w-full" />
+      <hr className=" border-base-300 w-full" />
       <h2
         className={`${offSide.className} text-sm font-bold text-gray-500 self-start`}
       >

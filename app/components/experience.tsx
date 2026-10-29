@@ -11,9 +11,9 @@ const offSide = Offside({
 const Experience = () => {
   return (
     <section
-      className={`w-xl  mx-auto px-6 py-16 md:py-24  ${offSide.className} flex flex-col gap-4`}
+      className={`w-xl  mx-auto px-6 py-16 md:py-24   ${offSide.className} flex flex-col gap-4`}
     >
-      <hr className="text-gray-700 font-light" />
+      <hr className=" border-base-300 " />
       <h2 className={`${offSide.className} text-sm font-bold text-gray-500`}>
         03 - Experience
       </h2>
