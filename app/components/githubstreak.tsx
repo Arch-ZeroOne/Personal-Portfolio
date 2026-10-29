@@ -1,19 +1,29 @@
 import React from "react";
+import { Anaheim, Offside, Roboto } from "next/font/google";
 import { GitHubCalendar } from "react-github-calendar";
+const anaheim = Anaheim({
+  weight: "400",
+  subsets: ["latin"],
+});
+const offSide = Offside({
+  weight: "400",
+  subsets: ["latin"],
+});
 const GithubStreak = () => {
   return (
-    <div className="card shadow-sm rounded-xl min-w-0">
-      <div className="card-body">
-        <h2 className="card-title">Github Contributions</h2>
-        <div className="w-full">
-          <GitHubCalendar
-            username="Arch-ZeroOne"
-            fontSize={13}
-            blockSize={13}
-          />
-        </div>
+    <section
+      className={`w-[65%] mr-auto ml-auto mx-auto px-6 py-16 md:py-24  ${offSide.className} flex flex-col gap-4 items-center`}
+    >
+      <hr className="text-gray-700 font-light w-full" />
+      <h2
+        className={`${offSide.className} text-sm font-bold text-gray-500 self-start`}
+      >
+        05 - tech Stack and activity
+      </h2>
+      <div className="space-y-6 text-lg  leading-relaxed tracking-normal self-start">
+        <GitHubCalendar username="Arch-ZeroOne" />
       </div>
-    </div>
+    </section>
   );
 };
 
