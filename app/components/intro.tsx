@@ -1,5 +1,5 @@
-import React from "react";
-import Links from "./links";
+"use client";
+
 import { MoveUpRight } from "lucide-react";
 import ThemeToggle from "./themetoggle";
 
@@ -20,7 +20,7 @@ const roboto = Roboto({
 });
 const Intro = () => {
   return (
-    <section className="flex  gap-5 w-4xl mt-20 items-center ">
+    <section className="flex  gap-5 w-4xl mt-20 items-center mb-15">
       <div className="flex w-full items-center">
         <div className="flex flex-col w-full h-40 gap-5 items-center">
           <div className="flex items-center gap-8 w-full">
@@ -44,6 +44,9 @@ const Intro = () => {
           </div>
           <div className="flex items-center gap-9 w-full">
             <button
+              onClick={() => {
+                window.open("/resume/my_resume.pdf", "_blank");
+              }}
               className={`btn btn-neutral font-bold rounded-xl text-xs h-8  ${roboto.className}`}
             >
               RESUME
