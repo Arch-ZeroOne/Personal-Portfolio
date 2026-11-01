@@ -30,10 +30,26 @@ const Certificates = () => {
                 Dorsu Banaybanay Campus
               </div>
             </div>
-
-            <button className="btn btn-square btn-ghost">
+            {/* The button to open modal */}
+            <label htmlFor="my_modal_6" className=" btn btn-square btn-ghost">
               <MoveUpRight height={18} width={18} />
-            </button>
+            </label>
+
+            {/* Put this part before </body> tag */}
+            <input type="checkbox" id="my_modal_6" className="modal-toggle " />
+            <div className="modal" role="dialog">
+              <div className="modal-box">
+                <h3 className="text-lg  text-center">
+                  IT AI Symposium Certificate
+                </h3>
+                <img src="/images/symposium_cert.jpg" className=""></img>
+                <div className="modal-action">
+                  <label htmlFor="my_modal_6" className="btn btn-neutral">
+                    Close Certificate
+                  </label>
+                </div>
+              </div>
+            </div>
           </li>
 
           <li className="list-row flex items-center justify-between">
