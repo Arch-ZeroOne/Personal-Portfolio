@@ -17,7 +17,7 @@ const About = () => {
       <h2 className={`${offSide.className} text-sm font-bold text-gray-500`}>
         01 - about
       </h2>
-      <div className="space-y-6 text-lg  leading-relaxed tracking-normal">
+      <div className="space-y-6 text-sm  md:text-lg  leading-relaxed tracking-norma w-80 md:w-full">
         <p>
           Hi, I’m <span className="font-bold">Windyl Monton</span>—a{" "}
           <span className="font-semibold">

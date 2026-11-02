@@ -7,7 +7,7 @@ const offSide = Offside({
 const Location = () => {
   return (
     <h2
-      className={`text-xs text-gray-400 flex items-center ${offSide.className}`}
+      className={`mr-auto ml-auto md:ml-0 md:mr-0 text-xs text-gray-400 flex   ${offSide.className}`}
     >
       <MapPin height={20} width={20} /> Lupon, Davao Oriental Philippines
     </h2>

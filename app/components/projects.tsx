@@ -18,7 +18,7 @@ const Projects = () => {
       <h2 className={`${offSide.className} text-sm font-bold text-gray-500`}>
         02 - projects
       </h2>
-      <div className="space-y-6 text-lg md:text-xl leading-relaxed tracking-normal grid grid-cols-2">
+      <div className="space-y-6 text-lg md:text-xl leading-relaxed tracking-normal grid grid-cols-1 md:grid-cols-2 items-center">
         <a href="#" className="hover-3d cursor-pointer">
           {/* content */}
           <div className="card w-60 h-60 ">

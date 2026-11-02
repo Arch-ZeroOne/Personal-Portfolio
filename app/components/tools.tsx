@@ -55,7 +55,7 @@ const techStack = [
 export default function TechStack() {
   return (
     <div
-      className={`w-[60%] mb-5 shadow-sm rounded-xl min-w-0  mr-auto ml-auto ${anaheim.className}`}
+      className={`w-full md:w-[60%] mb-5 shadow-sm rounded-xl min-w-0  mr-auto ml-auto ${anaheim.className}`}
     >
       <hr className=" border-base-300 w-full" />
       <div className="p-6">

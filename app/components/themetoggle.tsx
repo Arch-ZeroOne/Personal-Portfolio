@@ -1,6 +1,6 @@
 const ThemeToggle = () => {
   return (
-    <label className="swap swap-rotate self-start">
+    <label className="swap swap-rotate self-end">
       {/* this hidden checkbox controls the state */}
       <input type="checkbox" className="theme-controller" value="dark" />
 

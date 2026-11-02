@@ -11,7 +11,7 @@ const offSide = Offside({
 const Certificates = () => {
   return (
     <section
-      className={`w-xl mx-auto px-6 ${anaheim.className} flex flex-col gap-4 `}
+      className={`w-100 md:w-xl mx-auto px-6 ${anaheim.className} flex flex-col gap-4 `}
     >
       <hr className=" border-base-300 " />
       <h2 className={`${offSide.className} text-sm font-bold text-gray-500`}>
